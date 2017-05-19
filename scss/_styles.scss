@@ -1,0 +1,43 @@
+.flash-div {
+    // font-family: Helvetica;
+    margin: 0 auto;
+    text-align: center;
+    a{
+    	&:hover{
+    		color:black;
+    	}
+    }
+}
+
+.flash{
+	padding: 12px;
+    font-family: 'IM Fell English SC', serif;;
+    text-align: center;
+    color: transparent;
+    font-size: 72px;
+    letter-spacing: 5px;
+    border: 6px solid transparent;
+    border-image: linear-gradient(25deg, #BAA119, #c0392b);
+    border-image-slice: 7 12 14 5;
+    background: linear-gradient(25deg, #BAA119, #c0392b);
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    transition: all 1.8s ease;
+}
+    
+.top-bar{
+	background-image: url("../img/menu.png");
+	li{
+		background-image: url("../img/menu.png");
+	}
+	color:#fff;
+	a{
+		color:#fff;
+	}
+}
+
+#ghr-callout{
+	background-color: #fff;
+	// background-image: url("../img/keoland-map-background1.jpg");
+	background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+}
