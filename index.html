@@ -4,19 +4,22 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>GreyHawk Mock-up Page</title>
     <link rel="stylesheet" href="css/app.css">
     <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Open+Sans" rel="stylesheet">
   </head>
-  <body>
-
+  <body id="page_body">
     <!-- Start Top Bar -->
     <div class="top-bar">
       <div class="top-bar-left">
+
         <ul class="menu">
-          <li class="menu-text">GHR</li>
-              <li><a href="#">News</a></li>
+<!-- 
+          <li><a><img src="img/shield-logo.png"></a></li> -->
+          <li id="ghr_top" ><a style="color:#EEBC1D;">GHR</a></li>
+          <!-- <li class="menu-text"><img src="img/shield-logo.png" style="width:30px;display:inline;"></li> -->
+          <li><a href="#">News</a></li>
           <li><a href="#">Events</a></li>
           <li><a href="#">Documents</a></li>
           <li><a href="#">Contact</a></li>
@@ -24,22 +27,22 @@
       </div>
       <div class="top-bar-right">
         <ul class="menu">
-      
-            <li class="has-form">
+          
+          <li class="has-form search-form">
             <div class="row collapse">
               <div class="large-8 small-9 columns">
                 <input type="text" placeholder="Search for Stuff">
               </div>
               <div class="large-4 small-3 columns">
-                <a href="#" class="secondary button expand">Search</a>
+                <a href="#" class="secondary button expand"><i class="foundicon-search"></i>Search</a>
               </div>
             </div>
           </li>
+
         </ul>
       </div>
     </div>
     <!-- End Top Bar -->
-
     <div class="callout large" id="ghr-callout">
       <div class="row column text-center">
         <div class="flash-div">
@@ -51,8 +54,10 @@
     
     <div class="row" id="content">
       <div class="medium-8 columns">
+      <!-- <img src="img/shield-logo.png" id="shield"> -->
+        <h5 class="news" style="display:inline;"> News</h5>
         <div class="blog-post">
-          <h3>What's New <small>3/6/2015</small></h3>
+          <h3>GHR DEXcon Updates <small>5/22/2017</small></h3>
           <img class="thumbnail" src="http://placehold.it/850x350">
           <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
           <div class="callout">
@@ -62,19 +67,6 @@
             </ul>
           </div>
         </div>
-
-        <div class="blog-post">
-          <h3>Awesome blog post title <small>3/6/2015</small></h3>
-          <img class="thumbnail" src="http://placehold.it/850x350">
-          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-          <div class="callout">
-            <ul class="menu simple">
-              <li><a href="#">Author: Mike Mikers</a></li>
-              <li><a href="#">Comments: 3</a></li>
-            </ul>
-          </div>
-        </div>
-
         <div class="blog-post">
           <h3>Awesome blog post title <small>3/6/2015</small></h3>
           <img class="thumbnail" src="http://placehold.it/850x350">
@@ -86,7 +78,17 @@
             </ul>
           </div>
         </div>
-
+        <div class="blog-post">
+          <h3>Awesome blog post title <small>3/6/2015</small></h3>
+          <img class="thumbnail" src="http://placehold.it/850x350">
+          <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
+          <div class="callout">
+            <ul class="menu simple">
+              <li><a href="#">Author: Mike Mikers</a></li>
+              <li><a href="#">Comments: 3</a></li>
+            </ul>
+          </div>
+        </div>
         <div class="blog-post">
           <h3>Awesome blog post title <small>3/6/2015</small></h3>
           <img class="thumbnail" src="http://placehold.it/850x350">
@@ -101,14 +103,13 @@
       </div>
       <div class="medium-3 columns" data-sticky-container>
         <div class="sticky" data-sticky data-anchor="content">
-          <h4>Categories</h4>
+          <!--    <h4>Categories</h4>
           <ul>
             <li><a href="#">Skyler</a></li>
             <li><a href="#">Jesse</a></li>
             <li><a href="#">Mike</a></li>
             <li><a href="#">Holly</a></li>
           </ul>
-
           <h4>Authors</h4>
           <ul>
             <li><a href="#">Skyler</a></li>
@@ -116,6 +117,38 @@
             <li><a href="#">Mike</a></li>
             <li><a href="#">Holly</a></li>
           </ul>
+          -->
+          <div class="events-table-contain">
+            <h5 class="news">Events</h5>
+            <table>
+              <tr>
+                <th colspan="2">Saturday, May 20th</th>
+              </tr>
+              <tr>
+                <td>GHR Gameday  </td>
+                <td>Rockville, MD</td>
+              </tr>
+              <tr>
+                <th colspan="2">Wednesday, July 5th</th>
+              </tr>
+              <tr>
+                <td>DEXcon 2017  </td>
+                <td>Morristown, NJ</td>
+              </tr>
+              <tr>
+                <th colspan="2">Thursday, July 6th</th>
+              </tr>
+              <tr>
+                <td>DEXcon 2017  </td>
+                <td>Morristown, NJ</td>
+              </tr>
+              
+            </table>
+          </div>
+           <iframe src="https://calendar.google.com/calendar/embed?mode=AGENDA&amp;height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=32jfcop08rjgidna6gr5hlb9ko%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=America%2FNew_York" style="border-width:0" width="275" height="275" frameborder="0" scrolling="no" id="embedded_calendar"></iframe>
+         
+          <script type='text/javascript'>
+          </script>
         </div>
       </div>
     </div>
@@ -133,8 +166,6 @@
         <li><a href="#" aria-label="Next page">Next</a></li>
       </ul>
     </div>
-
-
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>

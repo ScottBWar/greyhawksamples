@@ -1,6 +1,11 @@
+#page_body{
+	background-color: #fefefe;
+	// background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+}
+
 .flash-div {
     // font-family: Helvetica;
-    margin: 0 auto;
+    // margin: 0 auto;
     text-align: center;
     a{
     	&:hover{
@@ -11,23 +16,43 @@
 
 .flash{
 	padding: 12px;
-    font-family: 'IM Fell English SC', serif;;
+    font-family: 'IM Fell English SC', serif;
+    // font-weight:bold;
     text-align: center;
     color: transparent;
     font-size: 72px;
     letter-spacing: 5px;
     border: 6px solid transparent;
-    border-image: linear-gradient(25deg, #BAA119, #c0392b);
+    border-image: linear-gradient(25deg, #272822, #c0392b);
     border-image-slice: 7 12 14 5;
-    background: linear-gradient(25deg, #BAA119, #c0392b);
+    background: linear-gradient(25deg, #272822, #c0392b);
     -webkit-background-clip: text;
     text-fill-color: transparent;
     transition: all 1.8s ease;
+	
+	@media(max-width:1038px){
+		 font-size: 48px;
+	}
+
+	@media(max-width:777px){
+		 font-size: 36px;
+	}
+
+	@media(max-width:642px){
+		 font-size: 18px;
+		 display:none;
+	}
+
+
 }
     
 .top-bar{
+	// padding:2.5rem;
 	background-image: url("../img/menu.png");
 	li{
+		background-image: url("../img/menu.png");
+	}
+	ul{
 		background-image: url("../img/menu.png");
 	}
 	color:#fff;
@@ -37,7 +62,58 @@
 }
 
 #ghr-callout{
-	background-color: #fff;
-	// background-image: url("../img/keoland-map-background1.jpg");
+	background-color:#7e8072;
+	// background-color: #AC9782;
+		// background-color:#bca58d;
+	// background-image: url("../img/keoland-cropped.jpg");
+	// background-size: 1200px;
+ //    background-repeat: no-repeat;
+ //    background-position: 50% 50%;
 	background-image: url("https://www.transparenttextures.com/patterns/rocky-wall.png");
+	border-bottom:1px ridge #000;
+}
+
+#ghr_top{
+	font-weight:bold;
+	color:#EEBC1D;
+}
+
+#embedded_calendar{
+	span{
+		font-family: "Lato",Helvetica,Roboto,Arial,sans-serif;
+	}
+}
+
+.events-table-contain{
+	th{
+		color:#fff;
+		background-color: #7e8072;
+    background-image: url(https://www.transparenttextures.com/patterns/rocky-wall.png);
+	}
+	font-size:12px;
+}
+
+.news{
+	font-family: 'IM Fell English SC', serif;
+	// border-bottom:1px solid #000;
+}
+
+.menu{
+	img{
+		width:40px;
+
+		@media(max-width:777px){
+			width:40px;
+		}
+	}
+}
+
+#shield{
+	width:40px;
+}
+
+.search_form{
+	// @media(max-width:777px){
+	// 		display: none;
+	// 	}
 }
